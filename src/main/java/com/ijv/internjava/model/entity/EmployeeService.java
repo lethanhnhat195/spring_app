@@ -27,7 +27,4 @@ public class EmployeeService extends BaseEntity {
     @Column(name = "NOTE")
     private String note;
 
-    /*JPA Required Constructor*/
-    public EmployeeService() {
-    }
 }

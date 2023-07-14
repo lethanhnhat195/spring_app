@@ -23,9 +23,6 @@ public class Roles extends BaseEntity {
     @Column(name = "DESCRIPTION")
     private String description;
 
-    /*JPA Require Constructor*/
-    public Roles() {
-    }
 
     @ManyToMany
     @JoinTable(name = "user_role",

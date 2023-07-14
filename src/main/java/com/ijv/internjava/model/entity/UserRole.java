@@ -17,7 +17,4 @@ public class UserRole extends BaseEntity {
     @JoinColumn(name = "ROLE_ID", nullable = false)
     private Roles role;
 
-    /*JPA Require Constructor*/
-    public UserRole() {
-    }
 }

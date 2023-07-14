@@ -39,9 +39,6 @@ public class Feedbacks extends BaseEntity {
     @Column(name = "RATING")
     private Integer rating;
 
-    /*JPA Required Constructor*/
-    public Feedbacks() {
-    }
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "feedbacks")
     private Set<Replies> replies = new LinkedHashSet<>();

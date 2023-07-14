@@ -10,6 +10,7 @@ import java.util.Date;
 @Entity
 @Table(name = "replies")
 public class Replies extends BaseEntity {
+    @Id
     @Column(name = "ID", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,7 +25,4 @@ public class Replies extends BaseEntity {
     @Column(name = "CONTENT")
     private String content;
 
-    /*JPA Required Constructor*/
-    public Replies() {
-    }
 }

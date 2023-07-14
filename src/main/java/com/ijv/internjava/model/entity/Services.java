@@ -30,10 +30,6 @@ public class Services extends BaseEntity {
     @Column(name = "DESCRIPTION")
     private String description;
 
-    /*JPA Require Constructor*/
-    public Services() {
-    }
-
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "service")
     private Set<EmployeeService> employeeServices = new LinkedHashSet<>();
 

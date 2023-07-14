@@ -42,9 +42,6 @@ public class Booking extends BaseEntity {
     @Column(name = "STATUS")
     private Integer status;
 
-    /*JPA Require Constructor*/
-    public Booking() {
-    }
 
     @OneToMany(mappedBy = "booking")
     private Set<BookingDetail> bookingDetails = new LinkedHashSet<>();

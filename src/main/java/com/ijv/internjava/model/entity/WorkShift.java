@@ -33,10 +33,6 @@ public class WorkShift extends BaseEntity {
     @Column(name = "DESCRIPTION")
     private String description;
 
-    /*JPA Require Constructor*/
-    public WorkShift() {
-    }
-
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "workShiftId")
     private Set<Employees> employees = new LinkedHashSet<>();
 }

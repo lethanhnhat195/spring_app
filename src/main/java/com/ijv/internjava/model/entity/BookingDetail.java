@@ -26,7 +26,4 @@ public class BookingDetail extends BaseEntity {
     @Column(name = "NOTE")
     private String note;
 
-    /*JPA Required Constructor*/
-    public BookingDetail() {
-    }
 }

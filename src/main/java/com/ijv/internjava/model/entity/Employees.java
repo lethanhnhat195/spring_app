@@ -48,9 +48,6 @@ public class Employees extends BaseEntity {
     @Column(name = "WORK_SHIFT_ID", nullable = false)
     private Integer workShiftId;
 
-    /*JPA Required Constructor*/
-    public Employees() {
-    }
 
     @ManyToMany
     @JoinTable(name = "user_role",
